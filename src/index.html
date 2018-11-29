@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootswatch.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+             <a class="navbar-brand" href="#">Digital Identity</a>
+        </nav>
+
+    <div class="container">
+        <form>
+            <legend class="title table-active">Fixed Information</legend>
+            <div class="row">
+                <input type="text" placeholder="Firstname" id="fname">
+                <input type="text" placeholder="Lastname" id="lname">
+                <input type="text"  placeholder="Gender" id="gender">
+                <input type="text"  placeholder="Birthdate" id="dob">
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+            <form>
+                <legend class="title table-active">Updatable Information</legend>
+                <div class="row">
+                    <input type="text" placeholder="Home address" id="address">
+                    <input type="text" placeholder="School name" id="school_name">
+                    <input type="text" placeholder="Year" id="school_year">
+                    <input type="text"  placeholder="Course" id="course">
+                    <input type="text"  id="verify" readonly="readonly">
+                    <!-- <input type="text"  placeholder="Educational Attaintment" id="educ"> -->
+                </div>
+            </form>
+    </div>
+
+    <div class="container">
+            <form>
+                <legend class="title table-active">Valid ID's</legend>
+                <div class="row">
+                    <input type="number" placeholder="SSS" name="sss">
+                    <input type="number" placeholder="Pag-ibig" name="pag_ibig">
+                    <input type="number" placeholder="TIN" name="tin">
+                    <input type="number"  placeholder="NBI" name="nbi">
+                </div>
+            </form>
+    </div>
+
+    <center>
+    <div class="row-btn">
+    <button type="button" onclick="updateInfo();" class="btn btn-primary btn-lg">Update Information</button>
+    <button type="button" onclick="setInfo();" class="btn btn-primary btn-lg">Submit Information</button>
+    <button type="button" class="btn btn-primary btn-lg btn-getInfo">Get Information</button>
+    </div>
+    </center>
+
+    <footer class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">copy 2018</a>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
